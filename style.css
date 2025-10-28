@@ -51,15 +51,14 @@ button {
 }
 
 .buttonGroup {
-   display: grid;
-  grid-template-columns: 1fr auto auto;
+  display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   margin-top: auto;
 }
-  .buttonGroup .btn:first-child:nth-last-child(3) {
-  grid-column: 1 / -1;
+.buttonGroup .btn:nth-last-child(2){
+  flex-grow: 1;
 }
-
 .btn {
   padding: 9px 12px;
   display: flex;
