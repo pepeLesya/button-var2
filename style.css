@@ -4,30 +4,77 @@
   box-sizing: border-box;
 }
 
+a{
+  text-decoration: none;
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f5f5f5;
-  padding: 20px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+
+}
+
+.container {
+  max-width: 1140px;
+  padding: 16px;
+  margin: 0 auto;
+}
+
+
+
+.items {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+
+.card {
+  overflow: hidden;
+  padding: 16px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  border: 1px solid #bdbdbd;
+  border-radius: 10px;
 }
 
 .buttonGroup {
-  display: flex;
-  flex-wrap: wrap;
+   display: grid;
+  grid-template-columns: 1fr auto auto;
   gap: 10px;
+  margin-top: auto;
+}
+  .buttonGroup .btn:first-child:nth-last-child(3) {
+  grid-column: 1 / -1;
 }
 
 .btn {
+  padding: 9px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 42px;
-  background-color: #107edc;
-  color: white;
-  border: none;
   border-radius: 6px;
-  padding: 0 20px;
-  flex: 1;
-  min-width: 0;
+  background-color: #107edc;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: .4px;
+  transition: all .3s ease-in
 }
-
-
 
 
 .btn:first-child:nth-last-child(3) {
@@ -35,11 +82,15 @@ body {
 }
 
 .btnIcon {
-  background-color: transparent;
-  border: 1px solid #dadada;
-  color: #595959;
-  flex: 0 0 42px;
   width: 42px;
+  height: 42px;
+  border: 1px solid #bdbdbd;
+  border-radius: 8px;
   padding: 0;
-  font-size: 18px;
+  background-color: #fff;
+  color: #212121;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer
 }
