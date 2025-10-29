@@ -72,11 +72,14 @@ button {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: .4px;
-  transition: all .3s ease-in 
+  transition: all .3s ease-in ;
+  cursor: pointer;
+  
 }
 .btn:hover{
   opacity: 0.6;
 }
+
 
 .btn:first-child:nth-last-child(3) {
   flex-basis: 100%;
@@ -88,13 +91,20 @@ button {
   border: 1px solid #bdbdbd;
   border-radius: 8px;
   padding: 0;
+  color: #fff;
   background-color: #fff;
   color: #212121;
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer
+  cursor: pointer;
+
 }
+.btnIcon:hover{
+  background-color: #fff;
+  border: 1px solid #8a8989;
+}
+
 @media (max-width: 768px) {
   .items {
     grid-template-columns: 1fr;
