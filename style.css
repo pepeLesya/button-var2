@@ -75,9 +75,6 @@ button {
   transition: all .3s ease-in 
 }
 .btn:hover{
-  opacity: 1;
-}
-.btn:active{
   opacity: 0.6;
 }
 
@@ -101,5 +98,10 @@ button {
 @media (max-width: 768px) {
   .items {
     grid-template-columns: 1fr;
+  }
+}
+@media (hover: hover){
+  button:hover{
+    background-color: #107edc;
   }
 }
